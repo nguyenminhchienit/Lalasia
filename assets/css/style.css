@@ -1,0 +1,490 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Eudoxus Sans', sans-serif;
+}
+
+:root{
+    --primary-color: #518581;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-content{
+    width: 1240px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    min-width: 170px;
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 54px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    background-color: #518581;
+    border-radius: 10px;
+}
+
+/* ================== HEADER ================= */
+
+.header{
+    background-color: #fff;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+.header .body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .nav ul{
+    display: flex;
+}
+
+.header .nav li:hover a{
+    color: #518581;
+    transition: all 0.3s;
+}
+
+.header .nav ul a{
+    display: block;
+    padding: 24px 30px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #151411;
+}
+
+.hero{
+    margin-top: 100px;
+}
+
+.hero .heading{
+    margin: auto;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 1.3;
+    text-align: center;
+    color: #151411;
+    max-width: 724px;
+}
+
+.hero .desc{
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #AFADB5;
+    max-width: 769px;
+    margin: auto;
+}
+
+.hero-bottom{
+    margin-top: 92px;
+    position: relative;
+}
+
+.hero .search{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 810px;
+    line-height: 84;
+    background-color: #fff;
+    box-shadow: 0px 4px 80px rgba(175, 173, 181, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    margin: auto;
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero .search .input-hero,
+.hero .search .btn-search{
+    outline: none;
+    border: none;
+}
+
+.hero .search .input-hero{
+    margin-left: 22px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #AFADB5;
+}
+
+.hero .search .btn-search{
+    margin-left: auto;
+}
+
+.hero .search .btn-search:hover{
+    opacity: 0.9;
+}
+
+.hero-bottom .banner{
+    width: 1240px;
+    height: 480px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* ============== SERVICES ===================== */
+
+.services{
+    margin-top: 180px;
+}
+
+.service-top{
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .service-top .benefits{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #FFB23F;
+}
+
+.service-top .heading{
+    width: 427px;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.3;
+    color: #151411;
+}
+
+.service-top .desc{
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #AFADB5;
+    width: 505px;
+}
+
+.service-list ul{
+    display: flex;
+    gap: 29px;
+    margin-top: 50px;
+}
+
+.service-list .item{
+    padding: 26px 24px;
+    width: 33.33%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+}
+
+.service-list .item .icon{
+    display: flex;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #F9F9F9;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-list .item .title{
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    color: #151411;
+}
+
+.service-list .item .desc{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #AFADB5;
+}
+
+/* ============== POPULAR ================== */
+
+.popular{
+    margin-top: 180px;
+    overflow: hidden;
+}
+
+.popular-top .info span{
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #FFB23F;
+    text-align: center;
+}
+
+.popular-top .info .heading{
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.3;
+    color: #151411;
+    text-align: center;
+}
+
+.popular-top .info .desc{
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin: auto;
+    text-align: center;
+    color: #AFADB5;
+    width: 656px;
+}
+
+.popular-list{
+    margin-top: 50px;
+    display: flex;
+    gap: 29px;
+}
+
+.popular-item{
+    flex: 1;
+}
+
+.popular-item .thumb{
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.popular-item .name{
+    display: block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #AFADB5;
+}
+
+.popular-item .info{
+    padding: 26px 0;
+}
+
+.popular-item .info .title{
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    color: #151411;
+}
+
+.popular-item .info .sub-title{
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #AFADB5;
+}
+
+.popular-item .info .price{
+    display: block;
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.3rem;
+    color: #151411;
+}
+
+
+/* ============== PRODUCT ================ */
+
+.product{
+    margin-top: 180px;
+}
+
+.product .body{
+    display: flex;
+}
+
+.product .our-product{
+    margin-right: 50px;
+}
+
+.product .our-product span{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #FFB23F;
+}
+
+.product .our-product .title{
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.3;
+    color: #151411;
+    width: 511px;
+}
+
+.our-product .desc{
+    width: 580px;
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #AFADB5;
+}
+
+.our-product .btn-learn{
+    margin-top: 50px;
+}
+
+.our-product .intro-product{
+    margin-top: 50px;
+    width: 595px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.qtn-product .qtn{
+    display: flex;
+    gap: 80px;
+    margin-top: 37px;
+}
+
+.qtn-product .item .times{
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.3;
+    color: #151411;
+}
+
+.qtn-product .item .desc{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #AFADB5;
+}
+
+.qtn-product .intro-product-2{
+    margin-top: 57px;
+    width: 595px;
+    height: 510px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ============== FEEDBACK ================== */
+
+.feedback{
+    margin-top: 180px;
+}
+
+.feedback-top{
+    display: block;
+    text-align: center;
+}
+
+.feedback-top span{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #FFB23F;
+}
+
+.feedback-top .heading{
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.3;
+    color: #151411;
+}
+
+.feedback-top .desc{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #AFADB5;
+    width: 656px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.feedback-list {
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.feedback-list .item{
+    width: 33.33%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+    padding: 32px;
+}
+
+.feedback-list .item .desc{
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #AFADB5;
+}
+
+.feedback-list .info{
+    margin-top: 26px;
+}
+
+.feedback-list .info,
+.feedback-list .info .user,
+.feedback-list .info .stars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback-list .info .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 14px;
+}
+
+.feedback-list .user-name{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.3;
+    color: #151411;
+}
+
+.feedback-list .info span{
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #151411;
+}
